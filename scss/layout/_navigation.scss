@@ -1,0 +1,32 @@
+.sitenav {
+  margin-right: auto;
+  display: flex;
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 3.2rem;
+    align-items: center;
+  }
+  &__link {
+    color: #939caa;
+  }
+  // @include responsive(tablet) {
+  //   &__list {
+  //     // margin-right: 6.4rem;
+  //   }
+  // }
+  @include responsive(mobile) {
+    &__list {
+      display: none;
+    }
+  }
+  &__link:hover {
+    transition: all 0.3s;
+    color: #fcb72b;
+  }
+  &__link:active {
+    opacity: 0.5;
+    color: #fcb72b;
+  }
+}

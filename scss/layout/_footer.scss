@@ -1,0 +1,22 @@
+.footer {
+  background: #333a44;
+  padding: 3.6rem 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .site-logo {
+    margin-right: 5.8rem;
+  }
+
+  .icons {
+    &__link:not(:last-child) {
+      margin-right: 2.4rem;
+    }
+
+    &__link:hover path {
+      fill: #ffffff;
+    }
+  }
+}

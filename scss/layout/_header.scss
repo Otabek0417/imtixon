@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  border-color: #ffff;
+  z-index: 1;
+  position: fixed;
+  padding: 2.2rem 0;
+  background-color: #ffff;
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .site-logo {
+    margin-right: 5.8rem;
+  }
+  @include responsive(tablet) {
+    padding: 2.2rem;
+  }
+  &__button {
+    display: none;
+  }
+  @include responsive(mobile) {
+    .header {
+      padding: 0;
+    }
+    .header__btn {
+      display: none;
+    }
+    .site-logo {
+      img {
+        width: 7.5rem;
+        height: 2.2rem;
+      }
+    }
+    .header__container {
+      padding: 0;
+    }
+    &__button {
+      border: none;
+      display: block;
+      margin-right: auto;
+      background-color: inherit;
+      padding: 0.2rem;
+    }
+  }
+}
